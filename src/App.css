@@ -10,6 +10,10 @@
 
 @import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
 
+::selection {
+  background: #FFEA85;
+}
+
 .App {
   text-align: center;
 }
@@ -25,7 +29,6 @@
 }
 
 #sponsors {
-  /* background-color: #FFF; */
   background-image: linear-gradient(#FAFAF6, #FAFAF6);
   margin-top: -10px;
 }
@@ -66,7 +69,6 @@
 }
 
 .App-header {
-  /* background-color: #2475b9; */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -254,6 +256,7 @@ a {
 }
 #faq .body {
   /* border: 3px solid #fff; */
+  color: rgb(145, 136, 94);
   padding: 0px 20px;
   max-height: 0;
   overflow-y: hidden;
@@ -267,7 +270,7 @@ a {
   font-family: 'Nunito';
 }
 #faq .body a {
-  color: #0645ad;
+  color: #E85B3D;
 }
 #faq .active {
   padding: 20px;
@@ -283,10 +286,6 @@ a {
   font-family: 'Nunito', sans-serif;
   font-style: normal;
   background-image: linear-gradient(#C6E0E8 20vh, #D7E5E5 70vh);
-  /* background-size: 100% auto; */
-  /* transition: 0.25s ease-in-out; */
-  /* background-position: bottom;
-  background-repeat: no-repeat; */
   z-index: 300;
 }
 
@@ -297,6 +296,10 @@ a {
 @media screen and (max-width: 320px) {
   #header {
     height: 70vh;
+  }
+
+  #faq .header {
+    font-size: 15px;
   }
 
   .clouds {
