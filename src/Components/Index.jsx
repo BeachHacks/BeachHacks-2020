@@ -8,7 +8,7 @@ export default class Info extends Component {
           {/* <Anime opacity={[0,1]} translateY={'1em'} delay={(e,i) => i * 3000} autoplay={true}> */}
           <h1 className="info-header">What is BeachHacks?</h1>
           <p className="info-container">
-            BeachHacks is the fourth collegiate hackathon hosted by California
+            BeachHacks is the fifth collegiate hackathon hosted by California
             State University, Long Beach! During our 24 hour event, student
             developers and designers will gather on campus to build and program
             ideas into reality. Whether you join a team or go solo, join us at
