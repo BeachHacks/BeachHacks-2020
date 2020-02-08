@@ -1,7 +1,9 @@
 import React, { Component } from "react";
-
 import Register from "./Register";
-import Image from "../Images/beachhacks header image.svg";
+import BeachHacks from "../Images/beachhacks-nav.png";
+import Info from "../Images/sub.png";
+import Shark from "../Images/shark.png"
+
 // import Cloud1 from "../Images/background-images/cloud1.png";
 // import Cloud2 from "../Images/background-images/cloud2.png";
 
@@ -9,11 +11,19 @@ class Header extends Component {
   render() {
     return (
       <div id="header">
-        <div className="container">
-          <div className="header-rounded container">
+        <div className="header-container">
+          <div className="header-shark">
+            <img src={Shark} alt="Shark" className="shark-image"/>
+          </div>
+          <div className="header-info">
             <img
-              src={Image}
-              alt="BeachHacks April 20-21st"
+              src={BeachHacks}
+              alt="BeachHacks April 25 - 26, 2020"
+              className="beachhacks-image"
+            />
+            <img
+              src={Info}
+              alt="BeachHacks April 25 - 26, 2020"
               className="beachhacks-image"
             />
             <br/>
@@ -22,11 +32,13 @@ class Header extends Component {
             <Register>
               {/* <a href="/live"> */}
                 {/* <button className="apply-button">WE ARE LIVE</button> */}
-                <button className="apply-button">See you next year!</button>
+                <button className="apply-button">Coming Soon!</button>
               {/* </a> */}
             </Register>
             <br/>
           </div>
+
+
           {/* <div className="clouds">
             <img src={Cloud1} alt="Cloud1" className="cloud1" />
             <img src={Cloud2} alt="Cloud2" className="cloud2" />

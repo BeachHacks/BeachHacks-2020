@@ -371,7 +371,7 @@ export default class Sponsors extends Component {
           <span role="img" alt="love">
             💖
           </span>{" "}
-          from the 3 Musketeers of BeachHacks
+          by the BeachHacks Committee
         </h3>
       </div>
     );

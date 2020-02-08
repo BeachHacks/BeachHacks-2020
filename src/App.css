@@ -1,3 +1,15 @@
+@font-face {
+  font-family: "Cooper";
+  src: url("../src/Fonts/CooperHewitt-Book.otf");
+}
+
+@font-face {
+  font-family: "Cooper-bold";
+  src: url("../src/Fonts/CooperHewitt-Heavy.otf");
+}
+
+@import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
+
 .App {
   text-align: center;
 }
@@ -13,7 +25,9 @@
 }
 
 #sponsors {
-  background-color: #ffffff;
+  /* background-color: #FFF; */
+  background-image: linear-gradient(#FAFAF6, #FAFAF6);
+  margin-top: -10px;
 }
 
 #sponsors .sponsor {
@@ -30,7 +44,7 @@
 }
 
 .App-header {
-  background-color: #2475b9;
+  /* background-color: #2475b9; */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -60,12 +74,11 @@
   padding: 0.25rem 2.5rem;
   border-radius: 2rem;
   cursor: pointer;
-  color: #0f2547;
+  color: #E85B3D;
   background-color: transparent;
-  border: 0.3vh solid #0f2547;
+  border: 0.3vh solid #074E64;
   transition: 0.25s ease-in-out;
-  font-family: futura-pt, sans-serif;
-  font-weight: 600;
+  font-family: "Cooper-bold", sans-serif;
   font-style: normal;
 }
 
@@ -81,13 +94,13 @@
   background-color: transparent;
   border: 0.3vh solid #fff;
   transition: 0.25s ease-in-out;
-  font-family: futura-pt, sans-serif;
+  font-family: 'Cooper-bold', sans-serif;
   font-weight: 600;
   font-style: normal;
 }
 .reg{
   color: #0f2547;
-  font-family: 'futura-pt', sans-serif;
+  font-family: 'Cooper', sans-serif;
   font-weight: 300;
   font-style: normal;
 }
@@ -125,34 +138,39 @@
     width: 100%;
   }
 }
-.futura {
+/* .futura {
   font-family: adelle, serif;
-}
+} */
 a {
   color: #2475b9;
-  font-weight: 400;
   text-decoration-line: none;
   text-decoration-style: none;
   text-decoration: none !important;
 }
 
+.header-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+  height: 100vh;
+}
+
 .beachhacks-image {
-  margin-top: 25px;
+  margin-top: 10px;
   width: 85%;
 }
 
-.header-rounded {
-  /* width:50%;
-  height:42vmin; */
-  transition: 0.25s ease-in-out;
-  background-color: rgba(255, 255, 255, 0.3);
-  border-radius: 25px;
-  align-items: center;
-  margin: auto;
-  margin-top: 175px;
-  padding: 10px;
-  z-index: 400;
+.shark-image {
+  flex-grow: 1;
+  max-width: 80%;
 }
+
+.header-info {
+  width: 40%;
+}
+
 .col-xs-12,
 .col-md-6 {
   padding-left: auto;
@@ -160,15 +178,18 @@ a {
 }
 
 #faq {
-  background-color: #2475b9;
-  margin-top: 100px;
-  margin-bottom: 10px;
+  background-color: #EDEADB;
+  /* background-image: linear-gradient(#EDEADB 80%, #FAFAF6); */
+  height: auto;
+  min-height: 85vh;
+  width: 100%;
+  margin-top: -5px;
 }
 #faq .contents {
   padding: 10px 0%;
   text-align: center;
   font-size: 20px;
-  font-family: "futura-pt";
+  font-family: 'Nunito';
 }
 #faq h3 {
   text-align: center;
@@ -189,16 +210,16 @@ a {
 }
 #faq .header {
   background-color: #fff;
-  color: #2475b9;
+  color: #E85B3D;
   padding: 20px 20px 14px 20px;
   cursor: pointer;
   border-radius: 2rem;
-  font-family: adelle, serif;
-  font-weight: 400;
+  font-family: 'Cooper-bold', serif;
   font-style: normal;
+  letter-spacing: 0.05em;
 }
 #faq .header:after {
-  color: #2475b9;
+  color: #E85B3D;
   -webkit-font-smoothing: antialiased;
   content: ">";
   position: relative;
@@ -221,7 +242,7 @@ a {
   -moz-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
   padding-right: 2em;
-  font-family: "futura-pt";
+  font-family: 'Nunito';
 }
 #faq .body a {
   color: #0645ad;
@@ -237,15 +258,13 @@ a {
 }
 
 #header {
-  font-family: adelle, serif;
-  font-weight: 400;
+  font-family: 'Nunito', sans-serif;
   font-style: normal;
-  background-image: url(./Images/background-images/long-beach-background.png),
-    linear-gradient(#0c496c 20vh, #fdae42 70vh);
-  background-size: 100% auto;
-  transition: 0.25s ease-in-out;
-  background-position: bottom;
-  background-repeat: no-repeat;
+  background-image: linear-gradient(#C6E0E8 20vh, #D7E5E5 70vh);
+  /* background-size: 100% auto; */
+  /* transition: 0.25s ease-in-out; */
+  /* background-position: bottom;
+  background-repeat: no-repeat; */
   z-index: 300;
 }
 
@@ -253,89 +272,93 @@ a {
   margin-top: 0px;
 }
 
-@media screen and (min-width: 320px) {
+@media screen and (max-width: 320px) {
   #header {
-    height: 90vh;
+    height: 70vh;
   }
+
   .clouds {
     height: 90vh;
   }
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (max-width: 500px) {
   #header {
     height: 120vh;
   }
+  .apply-button {
+    font-size: 14px;
+  }
   .clouds {
     height: 120vh;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
   #header {
-    height: 140vh;
+    height: 100vh;
+  }
+  .apply-button {
+    font-size: 16px;
   }
   .clouds {
     height: 140vh;
   }
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (max-width: 900px) {
   #header {
-    height: 160vh;
+    height: 100vh;
+  }
+  .header-container {
+    flex-wrap: wrap;
+    align-content: center;
+    height: 100%;
+  }
+  .shark-image {
+    max-width: 50%;
+  }
+  .header-info {
+    width: 100%;
+  }
+  .beachhacks-image {
+    margin-top: 10px;
+    width: 60%;
+  }
+  .apply-button {
+    font-size: 18px;
   }
   .clouds {
     height: 160vh;
   }
 }
 
-@media screen and (min-width: 1024px) {
-  #header {
-    height: 160vh;
-  }
-  .clouds {
-    height: 160vh;
-  }
-}
 
-@media screen and (min-width: 1440px) {
-  #header {
-    height: 160vh;
-  }
-  .clouds {
-    height: 160vh;
-  }
-}
-
-@media screen and (min-width: 2560px) {
-  #header {
-    height: 160vh;
-  }
-  .clouds {
-    height: 160vh;
-  }
-}
 .faq-header {
   font-size: 4em;
-  font-family: "futura-pt-bold";
+  font-family: "Cooper-bold";
+  color: #E85B3D;
+  -webkit-text-stroke: 4px white;
 }
 
 .sponsor-header {
   margin-top: 5vh;
   font-size: 3em;
-  font-family: "futura-pt-bold";
-  color: #2475b9;
+  font-family: "Cooper-bold";
+  color: #FFF;
+  background-color: #79D3F8;
+  padding: 10px;
 }
 .schedule-header {
   padding-top: 15vh;
   margin-top:0px;
   font-size: 3em;
-  font-family: "futura-pt-bold";
+  font-family: "Cooper-bold";
   color: #ffffff;
 }
 
 .sponsor-body {
-  font-family: futura-pt, sans-serif;
+  font-family: 'Nunito', sans-serif;
   font-weight: 600;
   font-style: normal;
   color: #000000;
@@ -348,7 +371,7 @@ a {
 
 .walter-icon {
   height: 5vmin;
-  margin-right: 10px;
+  margin-right: 7px;
   max-width: 100%;
   width: auto;
 }
@@ -385,15 +408,15 @@ a.hover {
 .item {
   padding: 10px;
   /*margin-top:2px;*/
-  font-family: futura-pt, sans-serif;
-  font-weight: 400;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 600;
   font-style: normal;
 }
 
 .item-live {
   padding: 10px;
   /*margin-top:2px;*/
-  font-family: futura-pt, sans-serif;
+  font-family: 'Nunito', sans-serif;
   font-weight:600;
   font-style: normal;
 }
@@ -407,12 +430,11 @@ a.hover {
 }
 
 #mlh-trust-badge {
-  display: block;
+  display: inline;
   max-width: 100px;
   min-width: 60px;
-  position: fixed;
+  position: absolute;
   right: 25px;
-
   width: 10%;
   z-index: 10000;
 }
@@ -433,7 +455,7 @@ a.hover {
   padding-top: 10px;
   padding-bottom: 10px;
   /*margin-top:2px;*/
-  font-family: futura-pt, sans-serif;
+  font-family: 'Nunito', sans-serif;
   font-weight: 600;
   font-style: normal;
 }
@@ -452,6 +474,7 @@ a.hover {
 .navbar-default > .container {
   width: 100%;
 }
+
 @media screen and (width: 768px) {
   .navbrand {
     margin-top: 10px;
@@ -482,7 +505,8 @@ a.hover {
 }
 
 .navbar {
-  background-color: #0f2547;
+  /* background-color: #D7E5E5; */
+  margin-bottom: 0;
 }
 
 .navbar-collapse.in {
@@ -490,7 +514,7 @@ a.hover {
 }
 
 .navbar-default {
-  background-color: rgba(12, 73, 108, 0.5);
+  background-color: #C6E0E8;
   border-color: transparent;
 }
 
@@ -504,23 +528,72 @@ a.hover {
     padding-right: 200px;
   }
 }
+
+#info .info-header {
+  font-family: 'Cooper-bold';
+  text-align: left;
+  color: #E85B3D;
+}
+
+#info .info-container {
+  font-family: 'Nunito';
+  color: #074E64;
+}
+
 #info {
   margin-top: -40px;
-  height: 150vmin;
-  background-color: #014e7d;
-  font-family: futura-pt;
+  height: auto;
+  min-height: 100vh;
+  background-image: linear-gradient(#D7E5E5 20%, #EDEADB);
+  /* background-color: #EDEADB; */
   text-align: left;
-  background-image: url(./Images/background-images/underwater-background.png);
+  /* background-image: url(./Images/background-images/underwater-background.png); */
   transition: 0.25s ease-in-out;
   background-size: 100% auto;
   background-position: bottom;
   background-repeat: no-repeat;
+  display: flex;
+  align-content: center;
+  flex-wrap: wrap;
 }
 
-#info .info-header {
-  font-family: futura-bold-pt;
-  text-align: left;
+.info-subheader {
+  font-family: 'Cooper-bold';
+  text-align: center;
+  color: #074E64;
+  margin-top: 30px;
 }
+
+#info-accomplishments {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.accomplishment {
+  font-family: 'Cooper';
+  text-align: center;
+  color: #074E64;
+  margin-top: 30px;
+}
+
+#info-wrapper {
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 50px;
+  border-radius: 40px;
+}
+
+@media screen and (max-width: 500px) {
+  #info-wrapper {
+    padding: 40px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  #info-wrapper {
+    padding: 20px;
+  }
+}
+
 
 .typeform-popup {
   display: block;
@@ -541,7 +614,7 @@ a.hover {
   animation: moveclouds 48s linear infinite;
   -moz-animation: moveclouds 48s linear infinite;
   -o-animation: moveclouds 48s linear infinite;
-  background-image: url(./Images/background-images/cloud1.png);
+  /* background-image: url(./Images/background-images/cloud1.png); */
   opacity: 0.7;
   transform: scale(0.3);
   position: relative;
@@ -601,7 +674,7 @@ a.hover {
   background-color:#3c68a5;
   width:100%;
 
-  background-image:url("./Images/background-images/stingray-background.png");
+  /* background-image:url("./Images/background-images/stingray-background.png"); */
   background-repeat:no-repeat;
   background-size:100% auto;
   background-color: #3c68a5;
@@ -649,7 +722,7 @@ a.hover {
 
 #links .item-header{
   color:#000000;
-  font-family: 'futura-pt', sans-serif;
+  font-family: 'Nunito', sans-serif;
   font-weight:600;
   text-align:left;
   font-size:24px;
@@ -657,7 +730,7 @@ a.hover {
 
 #links .item-text{
   color:#000000;
-  font-family: 'futura-pt', sans-serif;
+  font-family: 'Nunito', sans-serif;
   text-align:left;
   font-size:16px;
 }
@@ -680,7 +753,7 @@ a.hover {
 
 
 .futura{
-  font-family: 'futura-pt', sans-serif;
+  font-family: 'Nunito', sans-serif;
   font-weight:300;
   text-align:left;
 }
@@ -714,7 +787,7 @@ a.hover {
 }
 
 .futura-thick{
-  font-family: 'futura-pt', sans-serif;
+  font-family: 'Nunito', sans-serif;
   font-weight:600;
   text-align:left;
 }

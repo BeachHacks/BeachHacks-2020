@@ -8,7 +8,7 @@ class Navigation extends Component {
   render() {
     return (
       <div>
-        <Navbar collapseOnSelect fixedTop>
+        <Navbar collapseOnSelect>
           <Navbar.Header>
             <Navbar.Brand>
               <a href="/" className="item-logo">
