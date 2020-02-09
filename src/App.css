@@ -373,7 +373,9 @@ a {
   color: #FFF;
   background-color: #79D3F8;
   padding: 10px;
+  border-radius: 0.5em;
 }
+
 .schedule-header {
   padding-top: 15vh;
   margin-top:0px;
@@ -384,14 +386,31 @@ a {
 
 .sponsor-body {
   font-family: 'Nunito', sans-serif;
-  font-weight: 600;
+  font-weight: 400;
   font-style: normal;
-  color: #000000;
+  color: #074E64;
 }
 
-.footer {
-  margin-bottom: 0px;
-  font-size: 1em;
+.sponsor-body a {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  color: #074E64;
+}
+
+#footer {
+  padding: 20px;
+  background-color: #A2CCDA;
+}
+
+.logo {
+  color: #074E64;
+  height: 30px;
+  margin: 0 10px;
+}
+
+.footer-text{ 
+  color: #074E64;
 }
 
 .walter-icon {

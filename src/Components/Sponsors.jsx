@@ -8,8 +8,6 @@ import Heroku from "../Images/Sponsors/heroku.png";
 import Asi from "../Images/Sponsors/asi.png";
 import CECS from "../Images/Sponsors/cecs.png";
 import Wolfram from "../Images/Sponsors/wolfram.png";
-import Facebook from "../Images/facebooklogo.png";
-import Instagram from "../Images/instagramlogo.png";
 import Stickermule from "../Images/Sponsors/stickermule.png";
 import ZestTea from "../Images/Sponsors/zest tea.png";
 import Suja from "../Images/Sponsors/suja.png";
@@ -348,31 +346,6 @@ export default class Sponsors extends Component {
             </Col>
           </Row>
         </Grid>
-        <h2 classname="socialmedia">
-          <a href="https://www.facebook.com/BeachHacks/" target="_blank">
-            <img
-              src={Facebook}
-              width="80"
-              height="80"
-              alt="BeachHacks Facebook"
-            />
-          </a>
-          <a href="https://instagram.com/beachhackscsulb/" target="_blank">
-            <img
-              src={Instagram}
-              width="80"
-              height="80"
-              alt="BeachHacks Instagram"
-            />
-          </a>
-        </h2>
-        <h3 className="sponsor-body footer">
-          Made with{" "}
-          <span role="img" alt="love">
-            💖
-          </span>{" "}
-          by the BeachHacks Committee
-        </h3>
       </div>
     );
   }
