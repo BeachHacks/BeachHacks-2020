@@ -45,7 +45,7 @@ export default class Sponsors extends Component {
           <p className="sponsor-body">
             If you wish to sponsor our event, email us at{" "}
             <a className="futura" href="mailto:beachhacks@csulb.acm.org">
-            beachhacks@csulb.acm.org
+              beachhacks@csulb.acm.org
             </a>
           </p>
           <Row>

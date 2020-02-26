@@ -558,7 +558,7 @@ a.hover {
 }
 
 .navbar-default {
-  background-color: #C6E0E8;
+  background-color: rgba(198, 224, 232, 0.9);
   border-color: transparent;
 }
 
