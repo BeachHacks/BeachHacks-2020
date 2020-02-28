@@ -14,6 +14,7 @@ export default class Router extends Component {
         <div className="s-container">
           {/* Default route (index.js) */}
           <Route exact path={routePath + "/"} component={Home} />
+          <Route exact path={routePath + "/register"} component={Register} />
           <Route exact path={routePath + "/live"} component={Live} />
           <Route
             exact
