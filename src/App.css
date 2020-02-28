@@ -166,10 +166,15 @@
   font-family: adelle, serif;
 } */
 a {
-  color: #2475b9;
+  color: #074E64;
+  font-weight: bold;
   text-decoration-line: none;
   text-decoration-style: none;
   text-decoration: none !important;
+}
+
+a:hover {
+  color: #A2CCDA;
 }
 
 .header-container {
