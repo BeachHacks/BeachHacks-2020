@@ -14,12 +14,7 @@ export default class Info extends Component {
             ideas into reality. Whether you join a team or go solo, join us at
             BeachHacks and show us what makes you unique. It doesn't matter if
             you're aiming to be the next Tony Stark or you're just looking to
-            learn some code, BeachHacks has something for you! Keep in mind that
-            all participants are expected to abide by the{" "}
-            <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf">
-              MLH Code of Conduct
-            </a>
-            .
+            learn some code, BeachHacks has something for you!
           </p>
           {/* <h2 className="info-subheader">BeachHacks 2019's Stats</h2>
           <div id="info-accomplishments">
