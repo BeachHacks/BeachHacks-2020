@@ -87,7 +87,7 @@ export default class FAQ extends Component {
                                 If this changes, we will update affected parties immediately; however, if accepted to BeachHacks please be ready to provide your own travel arrangements."/>
                 </Col>
                         <Col xs={12}>
-                                    <DropButton header="Question not answered?" body={<div><p>Email us at <a href="mailto:help@beachhacks.com>help@beachhacks.com"></a> and we'll get back to you as soon as possible!</p></div>}/>
+                                    <DropButton header="Question not answered?" body={<div><p>Email us at <a href="mailto:help@beachhacks.com">help@beachhacks.com</a> and we'll get back to you as soon as possible!</p></div>}/>
                                 </Col>
                                 </Row>
                                 </div>

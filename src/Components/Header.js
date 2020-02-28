@@ -32,7 +32,7 @@ class Header extends Component {
             <Register>
               {/* <a href="/live"> */}
                 {/* <button className="apply-button">WE ARE LIVE</button> */}
-                <button className="apply-button">Coming Soon!</button>
+                <button className="apply-button">Apply Now!</button>
               {/* </a> */}
             </Register>
             <br/>
