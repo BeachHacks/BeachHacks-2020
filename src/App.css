@@ -10,6 +10,44 @@
 
 @import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
 
+.cancelled {
+  cursor: pointer;
+}
+.cancellation-p{
+  font-size: 12;
+  color: #0f2547;
+}
+.modal{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: auto;
+  max-width: 60vw;
+  max-height: 60vh;
+  font-size: calc(12px + 0.30em);
+  color: #0f2547;
+  background-color: rgba(248, 245, 234, 0.95);
+  border-radius: 5px;
+  padding: 10px;
+}
+.modal-container{
+  display: flex;
+  width: 50vw;
+  height: 50vh;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.close-btn {
+  margin: 8px;
+  color: #fff;
+  padding: 10px;
+  background-color: #61dafb;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
 ::selection {
   background: #FFEA85;
 }
@@ -284,6 +322,9 @@ a:hover {
 }
 
 #header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-family: 'Nunito', sans-serif;
   font-style: normal;
   background-image: linear-gradient(#C6E0E8 20vh, #D7E5E5 70vh);
