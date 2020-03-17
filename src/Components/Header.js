@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Register from "./Register";
 import BeachHacks from "../Images/beachhacks-nav.png";
+import Cancelled from "../Images/cancelled.png"; // :(
 import Info from "../Images/sub.png";
 import Shark from "../Images/shark.png"
 
@@ -21,9 +22,14 @@ class Header extends Component {
               alt="BeachHacks April 25 - 26, 2020"
               className="beachhacks-image"
             />
-            <img
+            {/* <img
               src={Info}
               alt="BeachHacks April 25 - 26, 2020"
+              className="beachhacks-image"
+            /> */}
+            <img
+              src={Cancelled}
+              alt="BeachHacks 2020 has been cancelled."
               className="beachhacks-image"
             />
             <br/>
