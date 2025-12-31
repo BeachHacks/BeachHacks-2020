@@ -19,7 +19,7 @@
     "react-pose": "^4.0.6",
     "react-router": "^4.3.1",
     "react-router-dom": "^4.3.1",
-    "react-scripts": "3.3.0",
+    "react-scripts": "5.0.1",
     "react-typeform-embed": "^0.2.1",
     "simple-react-modal": "^0.5.1"
   },
